@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <h1>Basketball Scoreboard</h1>
+        <div class="container">
+            <div class="team-card">
+                <h3 class="team-card__title">HOME</h3>
+                <div class="team-card__score-box"><span class="team-card__score" id="home-team-score">0</span></div>
+                <div class="team-card__buttons">
+                    <div class="team-card__inc-buttons">
+                        <button class="team-card__btn home-btn" onclick="increaseScore(this, 1)"">+1</button>
+                        <button class="team-card__btn home-btn" onclick="increaseScore(this, 2)">+2</button>
+                        <button class="team-card__btn home-btn" onclick="increaseScore(this, 3)">+3</button>
+                    </div>
+                    <div class="team-card__dec-buttons">
+                        <button class="team-card__btn home-btn" onclick="decreaseScore(this, 1)">-1</button>
+                        <button class="team-card__btn home-btn" onclick="decreaseScore(this, 2)">-2</button>
+                        <button class="team-card__btn home-btn" onclick="decreaseScore(this, 3)">-3</button>
+                    </div>
+                </div>
+            </div>
+            <div class="team-card">
+                <h3 class="team-card__title">GUEST</h3>
+                <div class="team-card__score-box"><span class="team-card__score" id="guest-team-score">0</span></div>
+                <div class="team-card__buttons">
+                    <div class="team-card__inc-buttons">
+                        <button class="team-card__btn guest-btn" onclick="increaseScore(this, 1)">+1</button>
+                        <button class="team-card__btn guest-btn" onclick="increaseScore(this, 2)">+2</button>
+                        <button class="team-card__btn guest-btn" onclick="increaseScore(this, 3)">+3</button>
+                    </div>
+                    <div class="team-card__dec-buttons">
+                        <button class="team-card__btn guest-btn" onclick="decreaseScore(this, 1)">-1</button>
+                        <button class="team-card__btn guest-btn" onclick="decreaseScore(this, 2)">-2</button>
+                        <button class="team-card__btn guest-btn" onclick="decreaseScore(this, 3)">-3</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
